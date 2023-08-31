@@ -1,0 +1,15 @@
+﻿@model Person
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Kişi Detayı</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">@Model.Name</h6>
+        <p class="card-text">@Model.Surname</p>
+        <p class="card-text">@Model.Email</p>
+        <p class="card-text">@Model.Phone</p>
+        <p class="card-text">@Model.Age</p>
+        <a asp-controller="Home" asp-action="Index" class="card-link">Anasayfaya git.</a>
+        <a asp-controller="Person" asp-action="GetAll" class="card-link">Kişiler listesine git.</a>
+    </div>
+</div>
